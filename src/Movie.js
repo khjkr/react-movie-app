@@ -1,7 +1,6 @@
 import './Movie.css';
 
 function Movie(props) {
-  console.log(props);
   return (
     <div className="Movie">
       <MoviePoster poster={props.poster} />
