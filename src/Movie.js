@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Movie.css';
 
 function Movie(props) {
@@ -7,6 +8,11 @@ function Movie(props) {
       <h1>{props.title}</h1>
     </div>
   );
+}
+
+Movie.propTypes = {
+  title: PropTypes.string,
+  poster: PropTypes.string
 }
 
 function MoviePoster(props) {
