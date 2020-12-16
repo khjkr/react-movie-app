@@ -11,14 +11,18 @@ function Movie(props) {
 }
 
 Movie.propTypes = {
-  title: PropTypes.string,
-  poster: PropTypes.string
+  title: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired
 }
 
 function MoviePoster(props) {
   return (
     <img src={props.poster} alt="poster" />
   )
+}
+
+MoviePoster.propTypes = {
+  poster: PropTypes.string.isRequired
 }
 
 export default Movie;
